@@ -45,7 +45,7 @@ const ProfessionalsReport = ({
       };
     });
   return (
-    <section className="flex flex-col p-3 gap-1 shadow-lg bg-white rounded-md dark:bg-sky-900">
+    <section className="flex flex-col p-4 gap-1 shadow-lg bg-white rounded-md dark:bg-sky-900">
       <h2 className="text-xl font-semibold pb-2">Profession</h2>
       {entityMap?.map((group) => {
         const width = `${((group?.value * 100) / total).toFixed(2)}%`;
@@ -80,7 +80,7 @@ const AgeReport = ({ age }: { age: Record<string, number> }) => {
       };
     });
   return (
-    <section className="flex flex-col p-3 gap-1 shadow-lg bg-white rounded-md dark:bg-sky-900">
+    <section className="flex flex-col p-4 gap-1 shadow-lg bg-white rounded-md dark:bg-sky-900">
       <h2 className="text-xl font-semibold pb-2">Age</h2>
       {ageTransformed?.map((ageGroup) => {
         const width = `${((ageGroup?.value * 100) / totalAgeGroupCount).toFixed(
@@ -123,7 +123,7 @@ const AvgGroupReport = ({
   const avgCount = totalMember > 0 ? totalMember / totalGroupCount : 0;
 
   return (
-    <section className="flex flex-col p-3 gap-1 shadow-lg bg-white rounded-md dark:bg-sky-900">
+    <section className="flex flex-col p-4 gap-1 shadow-lg bg-white rounded-md dark:bg-sky-900">
       <h2 className="text-xl font-semibold pb-2">Group Count</h2>
       <section className="flex">
         <div>Average size of Group:&nbsp;</div>

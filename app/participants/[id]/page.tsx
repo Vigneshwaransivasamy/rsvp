@@ -23,36 +23,36 @@ const ParticipantDetail = ({ params }: { params: { id: string } }) => {
         </div>
       </Link>
       <div className="py-3"></div>
-      <h1 className="text-2xl py-3">Participant Detail</h1>
+      <h1 className="text-2xl font-semibold py-3">Participant Detail</h1>
       {!data && <div>No Detail Found!</div>}
       {data && (
-        <section className="py-2">
-          <div className="flex">
-            <div className="w-64">Name: </div>
+        <section className="p-4 py-6 max-w-xl shadow-md rounded-md bg-white dark:bg-transparent dark:shadow-none dark:border dark:border-sky-400">
+          <div className="flex flex-col pb-2">
+            <div className="font-semibold">Name: </div>
             <div>{data?.name}</div>
           </div>
-          <div className="flex">
-            <div className="w-64">Age: </div>
+          <div className="flex flex-col pb-2">
+            <div className="font-semibold">Age: </div>
             <div>{data?.age}</div>
           </div>
-          <div className="flex">
-            <div className="w-64">Date of Birth: </div>
+          <div className="flex flex-col pb-2">
+            <div className="font-semibold">Date of Birth: </div>
             <div>{data?.dob}</div>
           </div>
-          <div className="flex">
-            <div className="w-64">Profession: </div>
+          <div className="flex flex-col pb-2">
+            <div className="font-semibold">Profession: </div>
             <div>{data?.profession}</div>
           </div>
-          <div className="flex">
-            <div className="w-64">Locality: </div>
+          <div className="flex flex-col pb-2">
+            <div className="font-semibold">Locality: </div>
             <div>{data?.locality}</div>
           </div>
-          <div className="flex">
-            <div className="w-64">Address: </div>
+          <div className="flex flex-col pb-2">
+            <div className="font-semibold">Address: </div>
             <div>{data?.address}</div>
           </div>
-          <div className="flex">
-            <div className="w-64">Number of guests: </div>
+          <div className="flex flex-col pb-2">
+            <div className="font-semibold">Number of guests: </div>
             <div>{data?.numberOfGuests}</div>
           </div>
         </section>
