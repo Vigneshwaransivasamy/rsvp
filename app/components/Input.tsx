@@ -13,9 +13,12 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ label, error, ...restProps }, ref) => {
     return (
       <div className="flex flex-col">
-        <label className="py-2 text-xs font-semibold">{label}</label>
+        <label htmlFor={restProps.name} className="py-2 text-xs font-semibold">
+          {label}
+        </label>
         <input
           ref={ref}
+          id={restProps.name}
           className="h-12 text-black rounded-lg px-3"
           {...restProps}
         />
