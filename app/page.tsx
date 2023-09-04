@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaHome, FaPlus, FaSearch } from "react-icons/fa";
+import { FaPlus, FaSearch } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
         className="shadow-md rounded-md bg-white dark:bg-transparent dark:border-1 darK:shadow-none dark:border dark:border-sky-400 p-3 text-center w-32 cursor-pointer hover:text-semibold dark:hover:bg-sky-700 transition-colors"
       >
         <div className="inline-block">
-          <FaHome />
+          <TbBrandGoogleAnalytics />
         </div>
         <div className="text-sm">Analytics</div>
       </Link>

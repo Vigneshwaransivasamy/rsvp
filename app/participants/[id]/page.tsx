@@ -29,31 +29,31 @@ const ParticipantDetail = ({ params }: { params: { id: string } }) => {
         <section className="p-4 py-6 max-w-xl shadow-md rounded-md bg-white dark:bg-transparent dark:shadow-none dark:border dark:border-sky-400">
           <div className="flex flex-col pb-2">
             <div className="font-semibold">Name: </div>
-            <div>{data?.name}</div>
+            <div className="text-sm">{data?.name}</div>
           </div>
           <div className="flex flex-col pb-2">
             <div className="font-semibold">Age: </div>
-            <div>{data?.age}</div>
+            <div className="text-sm">{data?.age}</div>
           </div>
           <div className="flex flex-col pb-2">
             <div className="font-semibold">Date of Birth: </div>
-            <div>{data?.dob}</div>
+            <div className="text-sm">{data?.dob}</div>
           </div>
           <div className="flex flex-col pb-2">
             <div className="font-semibold">Profession: </div>
-            <div>{data?.profession}</div>
+            <div className="text-sm">{data?.profession}</div>
           </div>
           <div className="flex flex-col pb-2">
             <div className="font-semibold">Locality: </div>
-            <div>{data?.locality}</div>
+            <div className="text-sm">{data?.locality}</div>
           </div>
           <div className="flex flex-col pb-2">
             <div className="font-semibold">Address: </div>
-            <div>{data?.address}</div>
+            <div className="text-sm">{data?.address}</div>
           </div>
           <div className="flex flex-col pb-2">
             <div className="font-semibold">Number of guests: </div>
-            <div>{data?.numberOfGuests}</div>
+            <div className="text-sm">{data?.numberOfGuests}</div>
           </div>
         </section>
       )}
