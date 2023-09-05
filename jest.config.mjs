@@ -15,6 +15,7 @@ const config = {
     "app/**/*.{js,jsx,ts,tsx}",
     "!**/*.d.ts",
     "!**/node_modules/**",
+    "!app/api/**/*.{js,jsx,ts,tsx}",
     "!<rootDir>/out/**",
     "!<rootDir>/.next/**",
     "!<rootDir>/*.config.js",
