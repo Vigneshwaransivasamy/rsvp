@@ -6,8 +6,5 @@ export interface Participant {
   locality: string;
   numberOfGuests: number;
   address: string;
-  guests: Guest[];
   id?: string;
 }
-
-export type Guest = Omit<Participant, "guests" | "numberOfGuests">;

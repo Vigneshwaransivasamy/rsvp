@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:dev": "jest --watch",
-    "test:coverage": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.5.7",
@@ -30,7 +31,14 @@
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.4",
+    "husky": "^8.0.0",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test",
+      "pre-push": "npm run test"
+    }
   }
 }

@@ -12,7 +12,7 @@ const config = {
   collectCoverage: true,
   coverageProvider: "v8",
   collectCoverageFrom: [
-    "**/*.{js,jsx,ts,tsx}",
+    "app/**/*.{js,jsx,ts,tsx}",
     "!**/*.d.ts",
     "!**/node_modules/**",
     "!<rootDir>/out/**",

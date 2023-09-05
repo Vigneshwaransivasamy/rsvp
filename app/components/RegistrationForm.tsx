@@ -59,7 +59,6 @@ const RegistrationForm = (): React.JSX.Element => {
       }
     } catch (error) {
       setSubmissionStatus(Submission.Failure);
-      console.log("Error:", error);
     }
   };
 

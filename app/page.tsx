@@ -1,37 +1,18 @@
 import Link from "next/link";
 import { FaPlus, FaSearch } from "react-icons/fa";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import NavLink from "./components/NavLink";
 
 export default function Home() {
   return (
-    <div className="flex flex-wrap gap-2">
-      <Link
-        href={`/add-participant`}
-        className="shadow-md rounded-md bg-white dark:bg-transparent dark:border-1 darK:shadow-none dark:border dark:border-sky-400 p-3 text-center w-32 cursor-pointer hover:text-semibold dark:hover:bg-sky-700 transition-colors"
-      >
-        <div className="inline-block">
-          <FaPlus />
-        </div>
-        <div className="text-sm">Add</div>
-      </Link>
-      <Link
-        href={`/participants`}
-        className="shadow-md rounded-md bg-white dark:bg-transparent dark:border-1 darK:shadow-none dark:border dark:border-sky-400 p-3 text-center w-32 cursor-pointer hover:text-semibold dark:hover:bg-sky-700 transition-colors"
-      >
-        <div className="inline-block">
-          <FaSearch />
-        </div>
-        <div className="text-sm">Search</div>
-      </Link>
-      <Link
-        href={`/participants/reports`}
-        className="shadow-md rounded-md bg-white dark:bg-transparent dark:border-1 darK:shadow-none dark:border dark:border-sky-400 p-3 text-center w-32 cursor-pointer hover:text-semibold dark:hover:bg-sky-700 transition-colors"
-      >
-        <div className="inline-block">
-          <TbBrandGoogleAnalytics />
-        </div>
-        <div className="text-sm">Analytics</div>
-      </Link>
-    </div>
+    <nav className="flex flex-wrap gap-2">
+      <NavLink to="/add-participant" icon={<FaPlus />} label="Add" />
+      <NavLink to="/participants" icon={<FaSearch />} label="Search" />
+      <NavLink
+        to="/participants/reports"
+        icon={<TbBrandGoogleAnalytics />}
+        label="Analytics"
+      />
+    </nav>
   );
 }
